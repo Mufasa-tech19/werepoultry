@@ -1,63 +1,113 @@
-body {
+/* ========== Base Reset ========== */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Body Styling ========== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
   background: url('images/chick_image2.jpg') no-repeat center center fixed;
   background-size: cover;
-  backdrop-filter: brightness(0.6);
+}
+
+/* ========== Header/Nav Bar ========== */
+header {
+  background: rgba(44, 44, 62, 0.9);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav a {
+  margin: 0 1rem;
   color: white;
-  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+  background: #00cc66;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #00994d;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark layer */
-  padding: 100px 20px;
-  text-align: center;
-  min-height: 100vh;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  backdrop-filter: brightness(0.7);
 }
 
-h1 {
+.overlay h1 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-p {
-  font-size: 1.2rem;
+.overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
-nav a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  background: #2c2c3e;
-  padding: 1rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-main {
-  padding: 2rem;
-}
-
-button {
-  padding: 0.5rem 1rem;
+/* Buttons Section */
+.hero-buttons button {
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
   background: #00cc66;
-  color: white;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-button:hover {
+.hero-buttons button:hover {
   background: #00994d;
 }
 
+/* ========== Footer ========== */
 footer {
-  margin-top: 2rem;
   background: #2c2c3e;
+  text-align: center;
   padding: 1rem;
+  margin-top: 2rem;
 }
