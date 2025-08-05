@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('images/chick_image2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: brightness(0.6);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark layer */
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  background: #2c2c3e;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #00cc66;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #00994d;
+}
+
+footer {
+  margin-top: 2rem;
+  background: #2c2c3e;
+  padding: 1rem;
+}
